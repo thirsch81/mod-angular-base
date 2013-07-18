@@ -1,0 +1,28 @@
+{
+	"web_server" :  {
+		"web_root": "web",
+		"index_page": "index.html",
+		"host": "localhost",
+		"port": 8080,
+		"static_files": true,
+		"route_matcher": true,
+		"gzip_files": false,
+	
+		"ssl": false,
+		"key_store_password": "",
+		"key_store_path": "",
+	
+		"bridge": true,
+		"inbound_permitted": [],
+		"outbound_permitted": []
+	},
+	
+	"mongo_persistor": {
+    	"address": "vertx.persistor",
+    	"host": "localhost",
+    	"port": 27017,
+    	"pool_size": 15,
+    	"db_name": "test_db",
+    	"fake": true
+	}
+}
